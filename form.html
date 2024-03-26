@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Pemesan Makanan</title>
+</head>
+<body>
+    <form action="pesan.php" method="POST">
+        <p>
+			<table border="5" cellpadding="10">
+				<tr>
+					<th colspan="3" bgcolor="#ff33cc">Daftar Pemesanan</th>
+					
+				</tr>
+				<tr>
+					<td bgcolor="aqua"><label>Nama:</label></td>
+					<td><input type="text" name="nama" placeholder="Masukan Nama Mu..." /></td>
+				</tr>
+			
+		</p>
+        <p>
+				<tr>
+					<td bgcolor="aqua"><label>No Hp:</label></td>
+					<td><input type="text" name="No Hp" placeholder="Masukan No Hp..." /></td>
+				</tr>
+		</p>
+        <p>
+				<tr>
+					<td bgcolor="aqua"><label>Email:</label></td>
+					<td><input type="email" name="email" placeholder="Masukan Email..." /></td>
+				</tr>
+			</table>
+		</p>
+        
+		<fieldset>
+			<legend>Makanan apa yang anda butuhkan?</legend>
+			<div>
+				<input type="checkbox" id="minuman" name="interest" value="coding" />
+				<label for="minuman">Minuman</label>
+			</div>
+			<div>
+				<input type="checkbox" id="ringan" name="interest" value="music" />
+				<label for="ringan">Makanan Ringan</label>
+			</div>
+			<div>
+				<input type="checkbox" id="berat" name="interest" value="music" />
+				<label for="baerat">Makanan Berat</label>
+			</div>
+		</fieldset>
+		
+		<fieldset>
+        <legend>Tambahan Lain?</legend>
+		<div>
+				<input type="checkbox" id="snack" name="interest" value="coding" />
+				<label for="snack">Snack</label>
+			</div>
+			<div>
+				<input type="checkbox" id="gorengan" name="interest" value="music" />
+				<label for="gorengan">Gorengan</label>
+			</div>
+			<div>
+				<input type="checkbox" id="aires" name="interest" value="music" />
+				<label for="aires">Air Es</label>
+			</div>
+		</fieldset>
+		
+		 <p>
+            <label>Waktu Pengambilan:</label>
+            <input type="date" name="tanggal" />
+        </p>
+		
+		 <p>
+            <label>Jenis Pengiriman:</label>
+            <select name="pilih">
+                <option value="spx">SPX</option>
+                <option value="j&t">J&T</option>
+                <option value="jne">JNE</option>
+                <option value="cod">COD</option>
+            </select>
+        </p>
+		
+		<p>
+            <label>Catatan:</label>
+            <textarea name="catatan"></textarea>
+        </p>
+		
+		<p>
+            <input type="submit" name="submit" value="Send" />
+        </p>
+    </form>
+</body>
+</html>
